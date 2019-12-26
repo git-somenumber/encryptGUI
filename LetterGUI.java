@@ -17,15 +17,15 @@ public class LetterGUI
         frame.setSize(300,300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
-        JPanel resPanel = new JPanel();
-        resPanel.setVisible(false);
+        // JPanel resPanel = new JPanel();
+        // resPanel.setVisible(false);
         JPanel panel = new JPanel();
         panel.setVisible(true);
-        placeComponents(panel,resPanel);
+        placeComponents(panel);
         
         frame.setVisible(true);
         frame.add(panel);
-        frame.add(resPanel);
+        // // frame.add(resPanel);
         // frame.add(resPanel,BorderLayout.NORTH);
         
         
@@ -36,14 +36,14 @@ public class LetterGUI
         // frame.getContentPane().add(yellowLabel, BorderLayout.CENTER);
     }
     
-    private static void placeComponents(JPanel panel, JPanel p2)
+    private static void placeComponents(JPanel panel)
     {
-        p2.setLayout(null);
+        // p2.setLayout(null);
         panel.setLayout(null);
         
-        JLabel l = new JLabel("Put the String to be encrypted here 2");
-        l.setBounds(10,10,250,25);
-        p2.add(l);
+        // JLabel l = new JLabel("Put the String to be encrypted here 2");
+        // l.setBounds(10,10,250,25);
+        // p2.add(l);
         
         JLabel encryptBLab = new JLabel("Put the String to be encrypted here");
         encryptBLab.setBounds(10,10,250,25);
